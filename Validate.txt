@@ -1,0 +1,24 @@
+Validación en Laravel:
+Clase Validator: En el controlador de Laravel, utiliza la clase Validator para validar la información del formulario, según Coders Free. 
+Reglas de validación: Define las reglas de validación para el campo password, como required, string, min, confirmed, y cualquier otra regla que sea necesaria, según kennyhorna.com. 
+Ejemplo:
+Code
+
+    $request->validate([
+        'password' => 'required|string|min:8|confirmed',
+    ]);
+Manejo de errores:
+Utiliza las plantillas de Laravel o el sistema de manejo de errores para mostrar los mensajes de validación al usuario cuando la validación en el servidor falla. 
+Password Rule Object (opcional):
+Para una validación de contraseña más rigurosa, puedes utilizar el Password Rule Object para personalizar las reglas y validar si la contraseña ha sido comprometida, según kennyhorna.com. 
+Pasos para implementar la validación:
+1. Crea el formulario HTML5:
+Utiliza input type="password" y atributos como minlength, maxlength, y pattern para la validación en el navegador. 
+2. Define las reglas de validación en Laravel:
+En el controlador, usa la clase Validator y define las reglas para el campo password. 
+3. Maneja los errores:
+Muestra los mensajes de error al usuario usando las plantillas de Laravel o el sistema de manejo de errores. 
+Ejemplo de código HTML5:
+
+<label for="password">Contraseña:</label>
+<input type="password" id="password" name="password" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[ `~!@#$%^&*()_+-=`]).*" title="La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial." required>

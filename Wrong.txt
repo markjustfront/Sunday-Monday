@@ -1,0 +1,41 @@
+
+Informe d'Avaluació del projecte T02
+
+    (T2M6I1) Permet canviar la categoria via AJAX (es permet fer-ho amb AXIOS o FETCH).
+    Resultat : (✅ Apte)
+    Comentari
+
+    En el codi font hi ha indicis clars d'ús de funcions AJAX amb AXIOS. Es considera vàlid.
+    (T2M6I2) Implementa un avís de cookies (es mostra fins que l'usuari les accepti).
+    Resultat : (❌ No apte)
+    Comentari
+
+    El Test Project no és funcional.
+    (T2M6I3) Valida la contrasenya via JS o HTML5 (totes les condicions s'han de complir).
+    Resultat : (❌ No apte)
+    Comentari
+
+    El Test Project no és funcional.
+    (T2M7I1) Crea un CRUD definint les rutes, controlant l'accés amb el middleware, implementant el controlador i utilitzant el model per gestionar la informació. (Imprescindible haver definit el formulari de crear i editar i el llistat de manteniment)
+    Resultat : (✅ Apte)
+    Comentari
+
+    No cal crear una carpeta CRUD, simplement amb un controlador ClassifiedAdsController. També podria ser de tipus resource. Hauries d'haver tingut més cura amb aquests aspectes: - El namespace de PublicationCrudController és incorrecte, cal afegir \CRUD al namespace - El fitxer web.php té incorrectes les classes. - Al controladors els hi falta use Inertia\Inertia; - El render del controlador apunta a"Publication/" en comptes de "Publications/"
+    (T2M7I2) Valida les dades que rep dels formularis per assegurar que són vàlides i no comprometen la seguretat de l'aplicació.
+    Resultat : (✅ Apte)
+    (T2M7I3) Gestiona les dades de l'aplicació creant models, definint les relacions i creant les migracions i seeders necessaris per garantizar-ne el funcionament.
+    Resultat : (✅ Apte)
+    Comentari
+
+    No has definit les relacions. - El fitxer de migració de 'publication_table' té mal escrit 'foreignId' (està foreingId que dona error)
+    (T2M9I1) Web responsive per resolució mòbil i escriptori amb TailwindCSS
+    Resultat : (❌ No apte)
+    Comentari
+
+    El Test Project no és funcional.
+    (T2M9I2) Accessibilitat nivell A a la part pública
+    Resultat : (❌ No apte)
+    Comentari
+
+    El Test Project no és funcional.
+
